@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tark Maps</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"></link>
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- My CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" id="navbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" id="brand">TarkMaps</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="assets/html/about.html" id="aboutLink">About</a>
+                        </li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  id="navDropdown">Choose a Map<span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="dropdown">
+                                <li id="customsNavLink">
+                                    <a href="assets/html/customs.html"><text id="customsText">Customs</text></a>
+                                </li>
+                                <li id="shorelineNavLink">
+                                    <a href="assets/html/shoreline.html" id="shorelineNavLink">Shoreline</a>
+                                </li>
+                                <li id="woodsNavLink">
+                                    <a href="assets/html/woods.html" id="woodsNavLink">Woods</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- title section -->
+        <div id="titleDiv" class="jumbotron">
+            <h1 id="title"> TarkMaps </h1>
+            <h4>by Ripshog</h4>
+        </div>
+        <div id="mapChoiceDisplay">
+            <div id="choosyTime"><text>Please Choose a map to View:</text></div>
+            <a id="customsLink" class="miniMap" href="assets/html/customs.html">
+                <h3>Customs</h3>
+                <img src="assets/images/customs_clean.png" id="customsMiniImage" height="200" width="400">
+            </a>
+            <a id="shorelineLink" class="miniMap" href="assets/html/shoreline.html">
+                <h3>Shoreline</h3>
+                <img src="assets/images/shoreline_clean.png" id="shorelineMiniImage" height="200" width="400">
+            </a>
+            <a id="woodsLink" class="miniMap" href="assets/html/woods.html">
+                <h3>Woods</h3>
+                <img src="assets/images/woods_clean.jpg" id="woodsMiniImage" height="200" width="400">
+            </a>
+        </div>
+    </body>
+</html>

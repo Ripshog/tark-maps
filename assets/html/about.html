@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tark Maps</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"></link>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html" id="brand">TarkMaps</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html" id="aboutLink">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="navDropdown">Choose a Map
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown">
+                            <li id="customsNavLink">
+                                <a href="customs.html">
+                                    <text id="customsText">Customs</text>
+                                </a>
+                            </li>
+                            <li id="shorelineNavLink">
+                                <a href="shoreline.html" id="shorelineNavLink">Shoreline</a>
+                            </li>
+                            <li id="woodsNavLink">
+                                <a href="woods.html" id="woodsNavLink">Woods</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+    </nav>
+
+    <!-- title section -->
+    <div id="titleDiv" class="jumbotron">
+        <h1 id="title"> TarkMaps </h1>
+        <h4>by Ripshog</h4>
+    </div>
+    <div id="aboutDisplay">
+        <text id="aboutTitle"> My Journey Into Tarkov </text>
+        <p>&nbsp &nbsp &nbsp &nbsp &nbsp Greetings fellow PMCs. Let me start off by saying, I am rather new to this game. I have been trying to come up with a way for me to better my understanding of Escape from Tarkov, and be more of a contributing member to my squad, and feel less like I'm being carried through raids. To that end, I have put together this site to help me with learning the maps so that I do not struggle as much with positioning. </p>
+        <p> If you feel you are in the same boat as I am, or if you are an experienced player who just wants a leg up by having an easily availiable set of maps, this is the site for you.</p>
+        <p>
+        <i><strong><text id="attribution">I cannot emphasize enough that I DID NOT create these maps. </text></strong></i> I simply added labels on the Customs and Shoreline maps, and created this site to
+        make them easy to display. All credit for each map goes to the map makers. The Customs and Shoreline maps are availiable at: 
+        <br> 
+        <a href="https://www.reddit.com/r/EscapefromTarkov/comments/7paeyj/customs_3d_map/"> Customs by Maksen</a> 
+        <br>
+        <a href="https://www.reddit.com/r/EscapefromTarkov/comments/7o6hlt/shoreline_3d_map/"> Shoreline by Maksen</a>
+        <br>
+        And the woods map is availiable at:
+        <br>
+        <a href="https://escapefromtarkov.gamepedia.com/Woods"> Tarkov Wiki Woods Maps </a>
+        <br>    
+        </p>
+        <p> 
+            Good Luck, and happy hunting.
+        </p>
+    </div>
+</body>
+
+</html>

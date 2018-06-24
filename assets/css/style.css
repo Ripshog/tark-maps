@@ -1,0 +1,120 @@
+#wrapper {
+    background-color: #262626;
+}
+#navbar {
+    background-color: #404040;
+    color: #ff9933;
+    border-bottom: 1px solid #ff9933;
+    margin-top: 0px;
+    margin-right:0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    width:100%;
+}
+
+#navbar-right {
+    color: #ff9933;
+}
+
+#brand {
+    color: #ff9933;
+}
+
+#aboutLink {
+    color: #ff9933;
+}
+
+#navDropdown {
+    color: #ff9933;
+}
+
+#dropdown {
+    background-color:#404040;
+    color: #ff9933;
+}
+
+#customsNavLink {
+    color: #ff9933;
+}
+#customsText {
+    color: #ff9933;
+}
+#shorelineNavLink {
+    color: #ff9933;
+}
+
+#woodsNavLink {
+    color: #ff9933;
+}
+
+
+/* index.html */
+#titleDiv {
+    text-align: center;
+    background-color: #262626;
+    color: #ff9933;
+    margin-top: 0px;
+    margin-bottom:0px;
+    border-bottom: 5px dashed #ff9933;
+}
+
+#mapChoiceDisplay {
+    background-color:#262626;
+    color: #ff9933;
+    width: 100%;
+    height: 1000px;
+    margin-top:0px;
+    padding-top: 20px;
+}
+
+#choosyTime {
+    font-size: 24px;
+}
+
+#customsLink {
+    margin-left: 5%;
+}
+
+#shorelineLink {
+    margin-left: 3%
+}
+
+#woodsLink {
+    margin-left: 3%
+}
+
+.miniMap {
+    float: left;
+    background-color: #262626;
+    color: #ff9933;
+}
+
+/* Map pages */
+#filters {
+    background-color: #ff9933;
+    text-align: center;
+}
+
+/* About Page */
+#aboutDisplay {
+    background-color: #262626;
+    color: #ff9933;
+    height: 900px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0px;
+}
+
+#aboutTitle {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#attribution {
+    text-decoration: underline;
+}
+

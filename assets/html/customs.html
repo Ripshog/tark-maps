@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tark Maps</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"></link>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html" id="brand">TarkMaps</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html" id="aboutLink">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="navDropdown">Choose a Map
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown">
+                            <li id="customsNavLink">
+                                <a href="customs.html">
+                                    <text id="customsText">Customs</text>
+                                </a>
+                            </li>
+                            <li id="shorelineNavLink">
+                                <a href="shoreline.html" id="shorelineNavLink">Shoreline</a>
+                            </li>
+                            <li id="woodsNavLink">
+                                <a href="woods.html" id="woodsNavLink">Woods</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://www.reddit.com/r/EscapefromTarkov/comments/7paeyj/customs_3d_map/" id="navbar-right"> Original Maps by Maksen</a>
+                    </li>
+                </ul>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+    </nav>
+
+    <!-- filter header -->
+    <div id="filters">
+        <select id="labelDropdown" onchange="labelCheck()">
+            <option value="all" selected>All Labels</option>
+            <option value="exfil-only">Exfil Only</option>
+            <option value="none">No Labels</option>
+        </select>
+    </div>
+
+    <div id="mapDisplay">
+        <img src="../images/customs_labeled.png" height="700" width="1450">
+    </div>
+    <script> 
+
+        var display = $("#mapDisplay");
+        function labelCheck() {
+            labelDropdown = $("#labelDropdown").val(); 
+            // var e = document.getElementById("labelDropdown"); 
+            // var strUser = e.options[e.selectedIndex].text;
+            console.log("labelDropdown: " + labelDropdown);
+            $("#mapDisplay").empty(); 
+            console.log("I'm doing stuff.")
+            if (labelDropdown == "all") { 
+                $("#mapDisplay").html("<img src='../images/customs_labeled.png' height='700' width='1450'>");
+            } else if (labelDropdown == "exfil-only") { 
+                $("#mapDisplay").html(" <img src='../images/customs_exfils.png' height='700' width='1450'>");
+            } else if (labelDropdown == "none") { 
+                $("#mapDisplay").html("<img src='../images/customs_clean.png' height='700' width='1450'>");
+            }
+        }
+        labelCheck();
+    </script>
+    <!-- <script src="../js/app.js"></script> -->
+</body>
+
+</html>
